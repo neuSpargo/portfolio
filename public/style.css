@@ -1,3 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit|Roboto");
+h1, h2, h3, h4, h5, h6, .neuNav-head {
+  font-family: 'Kanit', sans-serif; }
 
+html, body, p, input[type="text"] {
+  font-family: 'Roboto', sans-serif; }
+
+html {
+  background-color: white; }
+  html a {
+    color: inherit; }
+    html a:visited {
+      text-decoration: none; }
+
+body * {
+  border: solid black 2px; }
+body header, body footer {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row; }
+body header {
+  height: 150px; }
+  body header .logo {
+    flex: 1; }
+    body header .logo img {
+      text-align: center;
+      max-height: 100%;
+      max-width: 100%; }
+  body header nav {
+    flex: 11;
+    width: 100%; }
+body footer .copyright {
+  float: left; }
+body footer .social-buttons {
+  float: right; }
 
 /*# sourceMappingURL=style.css.map */

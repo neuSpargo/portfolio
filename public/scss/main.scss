@@ -1,0 +1,58 @@
+@mixin flex {
+    display: flex;
+    display: -webkit-flex;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Kanit|Roboto');
+
+h1, h2, h3, h4, h5, h6, .neuNav-head {
+    font-family: 'Kanit', sans-serif; 
+}
+html, body, p, input[type="text"]{
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+    a {
+        color: inherit;
+        &:hover {
+            //put accent code here
+        }
+        &:visited {
+            text-decoration: none;
+        }
+    }
+}
+body {
+    * {
+        border: solid black 2px;
+    }
+    header, footer {
+        @include flex;
+        flex-direction: row;
+    }
+    header {
+        height: 150px;
+        .logo {
+            flex: 1;
+            img {
+                text-align: center;
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+        nav {
+            flex: 11;
+            width: 100%;
+        }
+    }
+    footer {
+        .copyright {
+            float: left;
+        }
+        .social-buttons {
+            float: right;
+        }
+    }
+}
