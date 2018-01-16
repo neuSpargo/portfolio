@@ -24,4 +24,4 @@ app.get('/vseeks', function(req, res) {
     res.render('vseeks');
 });
 
-app.listen(3000);
+app.listen(process.env.PORT||3000);
