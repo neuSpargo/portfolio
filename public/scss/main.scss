@@ -12,9 +12,14 @@ html, body, p, input[type="text"]{
     font-family: 'Roboto', sans-serif;
 }
 
+.buffer {
+    min-width: 225px;
+}
+
 html {
     background-color: rgb(255, 255, 255);
     a {
+        text-decoration: none;
         color: inherit;
         &:hover {
             //put accent code here
@@ -28,31 +33,45 @@ body {
     * {
         border: solid black 2px;
     }
-    header, footer {
+    header {
         @include flex;
         flex-direction: row;
-    }
-    header {
-        height: 150px;
-        .logo {
-            flex: 1;
-            img {
-                text-align: center;
-                max-height: 100%;
-                max-width: 100%;
-            }
+        max-height: 150px;
+        // .logo {
+        // }
+        img {
+            max-height: 150px;
+            max-width: 225px;
         }
         nav {
-            flex: 11;
+            width: 100%;
+        }
+    }
+    .body {
+        @include flex;
+        flex-direction: row;
+        .page-contents {
             width: 100%;
         }
     }
     footer {
-        .copyright {
-            float: left;
-        }
-        .social-buttons {
-            float: right;
+        @include flex;
+        flex-direction: row;
+        .footer-content {
+            @include flex;
+            flex-direction: row;
+            width: 100%;
+            .social-buttons {
+                flex: 1;
+                text-align: center;
+                padding: 10px 0;
+            }
+            .copyright {
+                flex: 1.9;
+            }
+            .spacer {
+                flex: 9.5;
+            }
         }
     }
 }

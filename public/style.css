@@ -5,33 +5,51 @@ h1, h2, h3, h4, h5, h6, .neuNav-head {
 html, body, p, input[type="text"] {
   font-family: 'Roboto', sans-serif; }
 
+.buffer {
+  min-width: 225px; }
+
 html {
   background-color: white; }
   html a {
+    text-decoration: none;
     color: inherit; }
     html a:visited {
       text-decoration: none; }
 
 body * {
   border: solid black 2px; }
-body header, body footer {
+body header {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  max-height: 150px; }
+  body header img {
+    max-height: 150px;
+    max-width: 225px; }
+  body header nav {
+    width: 100%; }
+body .body {
   display: flex;
   display: -webkit-flex;
   flex-direction: row; }
-body header {
-  height: 150px; }
-  body header .logo {
-    flex: 1; }
-    body header .logo img {
-      text-align: center;
-      max-height: 100%;
-      max-width: 100%; }
-  body header nav {
-    flex: 11;
+  body .body .page-contents {
     width: 100%; }
-body footer .copyright {
-  float: left; }
-body footer .social-buttons {
-  float: right; }
+body footer {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row; }
+  body footer .footer-content {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    width: 100%; }
+    body footer .footer-content .social-buttons {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0; }
+    body footer .footer-content .copyright {
+      flex: 1.9; }
+    body footer .footer-content .spacer {
+      flex: 9.5; }
 
 /*# sourceMappingURL=style.css.map */
