@@ -1,5 +1,5 @@
 {
-  "name": "spargosyte",
+  "name": "spargo_portfolio",
   "version": "1.0.0",
   "description": "portfolio site for ryan spargo",
   "main": "index.js",
@@ -10,7 +10,11 @@
   "author": "rSpargo",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^3.6.1",
     "express": "^4.16.2",
+    "install": "^0.10.4",
+    "lottie-web": "^5.1.7",
+    "npm": "^5.6.0",
     "pug": "^2.0.0-rc.4"
   }
 }

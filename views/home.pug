@@ -1,9 +1,34 @@
 extends layout
 
-block vars
-    - var title = "Home";
 block content
-    div(id="myModal" class="modal")
-        div(class="modal-content")
-            h1 SPARGO'S WEB IS CURRENTLY UNDER CONSTRUCTION
-            img(src="images/hangin.jpg", alt="", srcset="")
+    h1 Welcome! Please excuse the (absense of a) mess!
+    h4 Behind the web, I'm busy spinning up a complete overhaul of this site. While this may leave the site looking empty, I did not however, want to leave any visitors empty handed.
+    div(class='container')
+        div(class='about_me')
+            h1 About Me
+            p
+                |I am a 21-year old full-stack web developement and design major from the small town
+                |of Mexico, Missouri.
+                br
+                br
+                |While I love to let my creative fingerprint show on everything I do, I also strive to know
+                |everything that goes on behind the front-end curtain; how and why something functions the way it does.
+                br
+                br
+                |When I am not coding/designing, I love to draw, watch movies, and play video games.
+                |I have a particular fondness of anything and everything Marvel and Nintendo.
+        div(class='projects')
+            h1 Projects
+            ul
+                li
+                    img(src='images/projects/vseeks.png', alt='vSeeks_Logo')
+                    p
+                        |A virtual Meeseeks Box right within Chrome!
+                        br
+                        |Use this tool to help block distracting websites when you're trying to get important work done,
+                        |but be sure to not ignore them too long...they may go to drastic measures to keep you focused.
+                        br
+                        |This was started as a 10-week conceptualization, development, and presentation project for my college.
+                li
+                    h3 MORE PROJECTS COMING SOON...
+
