@@ -41,7 +41,7 @@ body .body {
     body .body .page-contents .container h1 {
       text-transform: uppercase; }
     body .body .page-contents .container div {
-      background-color: rgba(75, 75, 75, 0.5);
+      background-color: rgba(75, 75, 75, 0.65);
       border-radius: 10px;
       margin: 25px;
       line-height: 1.5em; }
@@ -65,8 +65,8 @@ body .body {
     background-image: url(images/logo.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 30% auto;
-    opacity: 0.30;
+    background-size: 35% auto;
+    opacity: 0.1;
     top: 0;
     left: 0;
     bottom: 0;
@@ -83,7 +83,7 @@ body footer {
     flex-direction: row;
     width: 100%; }
     body footer .footer-content .social-buttons {
-      flex: 1;
+      width: 250px;
       font-size: 2em;
       text-align: center; }
       body footer .footer-content .social-buttons a {

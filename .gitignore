@@ -1,5 +1,3 @@
-node_modules/
 start_scsswatch.bat
 .sass-cache/
 .vscode
-npm-debug.log
