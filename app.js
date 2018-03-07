@@ -1,4 +1,4 @@
-var app = angular.module('spargosWeb', ['ng-route', 'ngAnimate']);
+var app = angular.module('spargosWeb', ['ngRoute', 'ngAnimate']);
 app.config(function($routeProvider){
     $routeProvider
     .when('/', {

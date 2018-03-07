@@ -91,13 +91,13 @@ body {
                 }
             }
         }
-        ::after {
+        &::after {
             content: "";
-            background-image: url(images/logo.svg);
+            background-image: url(images/logo.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: 35% auto;
-            opacity: 0.1;
+            opacity: 0.6;
             top: 0;
             left: 0;
             bottom: 0;
